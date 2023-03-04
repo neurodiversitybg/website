@@ -1,0 +1,24 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neurodiversitybg/website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neurodiversitybg/website/issues"
+  },
+  "homepage": "https://github.com/neurodiversitybg/website#readme",
+  "dependencies": {
+    "@tinacms/cli": "^1.2.2",
+    "tinacms": "^1.2.2"
+  }
+}

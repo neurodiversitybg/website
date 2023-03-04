@@ -1,0 +1,78 @@
+baseURL = 'http://example.org/'
+languageCode = 'bg-bg'
+title = 'Невроразнообразие'
+theme = "universal"
+style = "default"
+
+[params]
+    dropdown_mouse_over = true
+    mainSections = ["blog"]
+
+    disabled_logo = false
+    logo_text = "Neurodiversity"
+
+    logo = "img/logo.jpg"
+    logo_small = "img/logo-small.png"
+
+[params.widgets]
+    search = true
+    categories = true
+    tags = true
+
+[params.carouselHomepage]
+    enable = true
+    auto_play = false
+    slide_speed = 2000
+    pagination_speed = 1000
+
+summaryLength = 70
+
+[params.recent_posts]
+    enable = true
+    title = "From our blog"
+    subtitle = "Pellen"
+    hide_summary = false
+
+[permalinks]
+    blog = "/blog/:year/:month/:day/:filename/"
+
+[params.topbar]
+    enable = true
+    text = "<p>TODO: add text</p>"
+
+[menu]
+
+[[menu.main]]
+    name       = "Home"
+    identifier = "section.ap-home"
+    url        = ""
+    weight     = 1
+    post       = 1
+
+[[menu.main]]
+    name       = "About"
+    identifier = "section.ap-about"
+    url        = "/about"
+    weight     = 2
+    post       = 2
+
+[[menu.main]]
+    name       = "Team"
+    identifier = "section.ap-team"
+    url        = "/team"
+    weight     = 3
+    post       = 2
+
+[[menu.main]]
+    name       = "Resources"
+    identifier = "section.ap-portfolio"
+    url        = ""
+    weight     = 4
+    post       = 3
+
+[[menu.main]]
+    name       = "Blog"
+    identifier = "section.ap-blog"
+    url        = ""
+    weight     = 5
+    post       = 4
