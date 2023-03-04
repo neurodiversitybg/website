@@ -45,8 +45,13 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v3
-      - name: Install Node.js dependencies
-        run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+      - name: Setup Yarn
+        # You may pin to the exact commit or the version.
+        # uses: mskelton/setup-yarn@2fd0f48147cbee4fd8a71723a3b86851d86ba46b
+        uses: mskelton/setup-yarn@v1.4.0
+        with:
+           # Used to specify a package manager for caching in the default directory. Supported values: npm, yarn, pnpm
+           cache: yarn
       - name: Build TinaCMS
         env:
           CLIENT_ID: ${{ secrets.TINA_PUBLIC_CLIENT_ID }}
