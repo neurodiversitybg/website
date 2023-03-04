@@ -54,7 +54,7 @@ jobs:
            cache: yarn
       - name: Build TinaCMS
         env:
-          CLIENT_ID: ${{ secrets.TINA_PUBLIC_CLIENT_ID }}
+          TINA_PUBLIC_CLIENT_ID: ${{ secrets.TINA_PUBLIC_CLIENT_ID }}
           TINA_TOKEN: ${{ secrets.TINA_TOKEN }}
         run: ${{ steps.detect-package-manager.outputs.runner }} yarn tinacms build
       - name: Build with Hugo
